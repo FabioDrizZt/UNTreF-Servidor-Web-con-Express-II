@@ -1,0 +1,32 @@
+### Página de inicio
+GET http://localhost:3000/
+
+### Obtener todas las frutas
+GET http://localhost:3000/frutas/all
+
+### Buscar fruta por ID (ejemplo con ID 1)
+GET http://localhost:3000/frutas/id/1
+
+### Buscar fruta por ID (ejemplo con ID inexistente)
+GET http://localhost:3000/frutas/id/999
+
+### Buscar frutas por nombre (búsqueda parcial)
+GET http://localhost:3000/frutas/nombre/man
+
+### Buscar frutas por nombre (búsqueda exacta)
+GET http://localhost:3000/frutas/nombre/manzanas
+
+### Buscar frutas por nombre (inexistente)
+GET http://localhost:3000/frutas/nombre/rabano
+
+### Verificar si existe una fruta
+GET http://localhost:3000/frutas/existe/manzanas
+
+### Verificar si existe una fruta (caso negativo)
+GET http://localhost:3000/frutas/existe/rabano
+
+### Ruta inexistente (para probar error 404)
+GET http://localhost:3000/ruta-invalida
+
+### Metodo inexistente (para probar error 404)
+POST http://localhost:3000/
